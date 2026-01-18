@@ -4,13 +4,13 @@
 #define MAX_STRING 50
 
 typedef struct {
-    char immatriculation[MAX_STRING];
-    char marque[MAX_STRING];
-    int annee;
-    double prixParJour;
-    int joursLoues;
-    double coutMaintenance;
-    double benefice;
+  char immatriculation[MAX_STRING];
+  char marque[MAX_STRING];
+  int annee;
+  double prixParJour;
+  int joursLoues;
+  double coutMaintenance;
+  double benefice;
 } Vehicule;
 
 Vehicule Saisie_Vehicule(Vehicule parc[], int nVehiculesExistants);
