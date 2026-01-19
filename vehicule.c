@@ -70,9 +70,18 @@ void Analyse_Performance(Vehicule parc[], int n) {
   Trier_Vehicules_Par_Benefice(parc, n);
 }
 void Affiche_Vehicule(Vehicule v) {
-  printf("%s %s %d %.2f %d %.2f %.2f\n", v.immatriculation, v.marque, v.annee,
-         v.prixParJour, v.joursLoues, v.coutMaintenance, v.benefice);
+    printf("+----------------+--------------+------+------------+-------+--------------+--------------+\n");
+    printf("| %-14s | %-12s | %4d | %10.2f | %5d | %12.2f | %12.2f |\n",
+           v.immatriculation,
+           v.marque,
+           v.annee,
+           v.prixParJour,
+           v.joursLoues,
+           v.coutMaintenance,
+           v.benefice);
+    printf("+----------------+--------------+------+------------+-------+--------------+--------------+\n");
 }
+
 void Affiche_Vehicules(Vehicule parc[], int n) {
   for (int i = 0; i < n; i++) {
     printf("%d: ", i + 1);
